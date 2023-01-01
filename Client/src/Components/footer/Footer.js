@@ -46,7 +46,7 @@ return(
                         <div className="col-lg-11">
                             <a href="tel: +919674603907">
                                 <p className="p_2">
-                                    Prajit Sengupta +91 96746103907
+                                    Prajit Sengupta +91 9674603907
                                 </p>
                             </a>
                         </div>
