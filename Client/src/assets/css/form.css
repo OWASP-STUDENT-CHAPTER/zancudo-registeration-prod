@@ -1,0 +1,223 @@
+
+body {
+  color: #6a6f8c;
+  /* font-family: pricedown; */
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.register-form{
+  font: pricedown;
+    z-index: 100;
+  backdrop-filter: blur(400px);
+}
+.login-wrap {
+  /* font-size: 200px; */
+  /* margin: 50px auto;
+  min-height: 670px;
+  font-family: Pricedown;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+  0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 40px;
+  border-radius: 50px; */
+  background-color: #0D1634;
+  /* background-image: url("../media/abstract.png"); */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  /* border-radius: 15px; */
+  background: rgba(225, 225, 225, 0.1);
+  overflow: hidden;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* border-top: 1px solid rgba(225, 225, 225, 0.5); */
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  backdrop-filter: blur(40px);
+  /* webkit-backdrop-filter: blur(4px); */
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  /* border-radius: 30px; */
+  padding: 1.5rem 2.5rem;
+  
+}
+.login-wrap h1 {
+  font-family: pricedown;
+  margin-left: 35%;
+  display: inline-block;
+  font-size: 3rem;
+  border-bottom: 2px solid #d6c386;
+  color: #fff;
+  margin-left: 0% !important
+}
+
+.login-html {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  /* position: absolute; */
+}
+
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+
+.login-form .group .label,
+.login-form .group .button,
+button.g-sign-button {
+  text-transform: uppercase;
+}
+
+.login-form {
+  min-height: 345px;
+  /* position: relative; */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.login-form .group {
+  margin-bottom: 15px;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button,
+button.g-sign-button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+
+.login-form .group .input,
+.login-form .group .button,
+button.g-sign-button {
+  border: none;
+  padding: 15px 20px;
+  /* border-radius: 25px; */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-form .group .select-input option {
+  background-color: white !important;
+  color: black !important;
+}
+
+.login-form .group .input:focus {
+  outline: none;
+}
+
+.login-form .group input[data-type="password"] {
+  -webkit-text-security: circle;
+}
+
+.login-form .group .label {
+  font-size: 15px;
+}
+
+.login-form .group .button,
+button.g-sign-button {
+  background: rgba(239, 147, 147, 1);
+  color: black;
+}
+
+button.g-sign-button {
+  outline: none;
+  /* margin-top: 10%; */
+}
+
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  /* position: relative; */
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  /* position: absolute; */
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 40px 0 20px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.foot-lnk {
+  text-align: center;
+}
+
+.pc-form-section {
+  position: absolute;
+}
+
+@media only screen and (max-width: 415px) {
+  .login-wrap {
+    width: 100%;
+    margin-right: 80px;
+    margin-left: 20px;
+    position: relative;
+    left: -15px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .login-wrap {
+    width: 100%;
+    margin-right: 80px;
+    margin-left: 20px;
+    position: relative;
+    left: -15px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .login-wrap {
+    width: 100%;
+    margin-right: 80px;
+    margin-left: 20px;
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .login-wrap {
+    width: 90%;
+    margin-right: 80px;
+    margin-left: 20px;
+    position: relative;
+    left: -0px;
+  }
+}

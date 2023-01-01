@@ -1,0 +1,78 @@
+@font-face {
+    font-family: pricedown;
+    src: url("./pricedown\ bl.ttf");
+}
+.navbarprat{
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbarprat a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbarprat li{
+    display: inline;
+    list-style-type: none;
+}
+
+.navbarprat-logo{
+    width: 150px;
+    margin-left: 20px;
+    padding: 5px 0;
+    position: relative;
+    top: 10px;
+}
+
+.navbarprat-link{
+    font-family: pricedown;
+    font-weight: 100;
+    float: right;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    /* border-radius: 10px; */
+    letter-spacing: 1px;
+    position: relative;
+    top: 10px;
+}
+
+.navbarprat-link:hover{
+background-color: white;
+color: black;
+}
+
+@media screen and (max-width:1025px){
+    .navbarprat{
+        background-color: #191816;
+    }
+    .navbarprat-link{
+        padding: 5px 10px;
+        font-size: 15px;
+        /* letter-spacing: ; */
+    }
+    .navbarprat-logo{
+        width: 120px;
+        padding: 0;
+    }
+    .navbarprat{
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width:376px){
+    .navbarprat-link{
+        padding: 5px 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .navbarprat-logo{
+        width: 100px;
+        padding: 0;
+    }
+    .navbarprat{
+        padding: 20px 5px;
+    }
+}

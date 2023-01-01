@@ -1,0 +1,118 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font: Pricedown;
+}
+body {
+  /* width: 100vh; */
+  height: 100vh;
+  background-color: white;
+    animation: bgfade 15s infinite;
+      background-size: cover;
+      background-position: center;
+      background-color: #000;
+      position: sticky;
+  /* background-image: radial-gradient(
+      circle at top right,
+      rgba(121, 68, 154, 0.13),
+      transparent
+    ), */
+    
+    /* radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent); */
+
+    /* background: linear-gradient(to right,#a89f902d,transparent ); */
+  background-repeat: no-repeat;
+} 
+/****** add a background overlay *******/
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #000000 75%, #00000000);
+  opacity: 0.35;
+}
+.login-wrap h1 {
+  margin-left: 13% !important;
+}
+.color {
+  color: #fff !important;
+}
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* .logo{
+    margin-top: 100px;
+    margin-left:500px;
+  } */
+
+.logo {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.landingpart {
+  height: 100%;
+}
+.bounds {
+  overflow-x: hidden;
+  width: 100% !important;
+}
+
+.logojarvis {
+  margin: auto;
+  width: 75%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.prop {
+  margin-top: 15rem;
+}
+@keyframes bgfade {
+  0% {
+    background-image: url("./assets/images/bg1.jpeg");
+  }
+
+  25% {
+    background-image: url("./assets/images/bg2.jpeg");
+  }
+
+  50% {
+    background-image: url("./assets/images/bg3.jpeg");
+  }
+
+  75% {
+    background-image: url("./assets/images/bg4.jpeg");
+  }
+
+  100% {
+    background-image: url("./assets/images/bg1.jpeg");
+  }
+}
+
+
+
+@media only screen and (min-width: 1300px) {
+  .logojarvis {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 964px) {
+  .hide {
+    display: none;
+  }
+}

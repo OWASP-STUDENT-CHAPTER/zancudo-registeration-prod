@@ -1,0 +1,217 @@
+.contactus {
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: url("../media/Group\ 4.png"); */
+  background-repeat: no-repeat;
+  background-color: #191816;
+  opacity: 1;
+  background-size: 100%;
+}
+
+.contact-left-image {
+  width: 400px;
+}
+
+.contact-left {
+  text-align: center;
+  margin: auto;
+}
+
+.contact-right {
+  padding: 30px;
+}
+
+.contact-right-elements a {
+  text-decoration: none;
+}
+
+.contact-right-elements {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-right-elements .fab,
+.contact-right-elements .fas {
+  color:rgba(239, 147, 147, 1);
+  transition: color 0.25s;
+  font-size: 45px;
+}
+
+.contact-right-elements .fab:hover,
+.contact-right-elements .fas:hover {
+  color: white;
+}
+
+.contact-right-elements p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+.p_1 {
+  position: relative;
+  top: 10px;
+  font-size: 15px;
+}
+
+.p_2 {
+  position: relative;
+  top: 10px;
+  font-size: 15px;
+}
+
+.socialmedia {
+  display: flex;
+}
+
+.socialmedia div {
+  margin: 0 20px;
+}
+
+.owasp-logo-123{
+  width: 400px;
+}
+
+.owasp-content{
+  padding: 40px 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 0.8;
+}
+
+.contact-main-heading {
+  color: rgba(239, 147, 147, 1);;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  background-color: #d6c386;
+  color: white;
+  opacity: 1;
+}
+
+.location {
+  border-radius: 25px;
+}
+
+hr
+{
+  margin: 0 auto 20px;
+  background-color: rgba(239, 147, 147, 1);
+  width: 90vw;
+}
+.linkrow
+{
+  padding: 0 0 40px;
+}
+.impLinks
+{
+  text-align: center;
+  margin: 20px 0;
+}
+.impLinks a
+{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.733);
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+}
+.impLinks a:hover
+{
+  color: #d6c386;
+}
+
+@media only screen and (min-width: 765px) {
+  .socialmedia div:first-child {
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .contact-right {
+      padding-top: 0px;
+  }
+  .contact-right-elements p {
+      margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width:1025px){
+  .owasp-logo-123{
+    width: 300px;
+  }
+  
+  .owasp-content{
+    padding: 40px 50px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .contact-right-elements p {
+      position: relative;
+      top: 20px;
+  }
+  .contact-right-elements p {
+      margin-left: 0px;
+  }
+  .location {
+      width: 270px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-right-elements:first-child {
+      margin-top: 0px;
+  }
+  
+  .owasp-logo-123{
+    margin-top: 50px;
+  }
+
+  .contact-right{
+      text-align: center  ;
+  }
+
+  .contact-left-image {
+      margin: 50px 0px;
+  }
+  .socialmedia {
+      justify-content: center;
+  }
+  .location {
+      width: 300px;
+      margin: 50px 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-left-image {
+      width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 321px) {
+  .contact-right-elements .fab {
+      font-size: 35px;
+  }
+  .owasp-logo-123{
+    width: 200px;
+  }
+  .socialmedia div {
+    margin: 0 10px;
+  }
+}
