@@ -107,17 +107,24 @@ app.use("/api/event", event);
 
 // * Production setup
 if (process.env.NODE_ENV === "production") {
-  console.log("production", envConfig);
-  app.use(express.static(path.resolve(__dirname, "Client", "build")));
+  console.log("prod");
+  app.use(express.static(path.resolve(__dirname, "../client/build")));
   app.get("/*", function (req, res) {
-    // this -->
-    res.cookie("XSRF-TOKEN", req.csrfToken());
-    res.sendFile(path.resolve(__dirname, "Client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
   });
-}
 
-app.use("/static", express.static(__dirname + "\\Client\\src\\assets"));
-console.log(__dirname + "\\Client");
+// if (process.env.NODE_ENV === "production") {
+//   console.log("production", envConfig);
+//   app.use(express.static(path.resolve(__dirname, "Client", "build")));
+//   app.get("/*", function (req, res) {
+//     // this -->
+//     res.cookie("XSRF-TOKEN", req.csrfToken());
+//     res.sendFile(path.resolve(__dirname, "Client", "build", "index.html"));
+//   });
+// }
+
+// app.use("/static", express.static(__dirname + "\\Client\\src\\assets"));
+// console.log(__dirname + "\\Client");
 
 // Handle unhandled promise rejections
 process.on("unhandledRejection", (err, promise) => {
@@ -127,3 +134,4 @@ process.on("unhandledRejection", (err, promise) => {
 process.on("uncaughtException", (err, promise) => {
   console.log(`Error: ${err.message}`);
 });
+}
