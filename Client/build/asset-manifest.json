@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.75da56b7.chunk.css",
+    "main.css": "/static/css/main.d967a990.chunk.css",
     "main.js": "/static/js/main.09a84420.chunk.js",
     "main.js.map": "/static/js/main.09a84420.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d8f439a3.js",
@@ -8,7 +8,7 @@
     "static/js/2.faecbb82.chunk.js": "/static/js/2.faecbb82.chunk.js",
     "static/js/2.faecbb82.chunk.js.map": "/static/js/2.faecbb82.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.75da56b7.chunk.css.map": "/static/css/main.75da56b7.chunk.css.map",
+    "static/css/main.d967a990.chunk.css.map": "/static/css/main.d967a990.chunk.css.map",
     "static/js/2.faecbb82.chunk.js.LICENSE.txt": "/static/js/2.faecbb82.chunk.js.LICENSE.txt",
     "static/media/DataVault.a2f84919.png": "/static/media/DataVault.a2f84919.png",
     "static/media/Flipr_White_Logo.56a19bae.png": "/static/media/Flipr_White_Logo.56a19bae.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.d8f439a3.js",
     "static/js/2.faecbb82.chunk.js",
-    "static/css/main.75da56b7.chunk.css",
+    "static/css/main.d967a990.chunk.css",
     "static/js/main.09a84420.chunk.js"
   ]
 }
