@@ -54,6 +54,7 @@ const Cards = ({ cards }) => {
           open={cards[1].open}
           active={cards[1].active}
           devfolio={false}
+          layout={true}
           styles={{
             position: "relative",
             left: "-5px" + "!important",

@@ -35,7 +35,11 @@
     bottom: 40px;
   }
 }
-
+@media (max-width: 1500px) and (min-width: 1300px) {
+  .cont {
+    margin-top: 30vh;
+  }
+}
 .FlipclockUpper {
   position: absolute;
   top: 85%;

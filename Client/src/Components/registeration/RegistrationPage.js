@@ -15,9 +15,9 @@ const RegistrationPage = () => {
         </div>
       </section>
 
-      <section className="sponsor">
+      {/* <section className="sponsor">
         <SponsorSlide2 />
-      </section>
+      </section> */}
 
       <section className="jarvis-footer">
         <Footer />

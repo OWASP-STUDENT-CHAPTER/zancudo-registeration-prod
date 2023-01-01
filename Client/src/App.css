@@ -106,10 +106,36 @@ canvas {
 
 
 
-@media only screen and (min-width: 1300px) {
+@media (max-width: 1500px) and (min-width: 1300px) {
   .logojarvis {
-    width: 50%;
+    /* position: relative; */
+    top:-100px;
+    width: 40%;
   }
+}
+@media only screen and (min-width: 1501px) {
+  .logojarvis {
+    /* position: relative; */
+    /* top:-50px; */
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .logojarvis {
+    /* position: relative; */
+    /* top:-50px; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    
+    left: 5%;
+    width: 60%;
+  }
+  /* .logohead
+  {
+    position: relative;
+  } */
 }
 @media only screen and (max-width: 964px) {
   .hide {

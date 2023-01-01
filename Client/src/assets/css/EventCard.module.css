@@ -182,9 +182,14 @@ body {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 829px) {
   .container .card .face {
     width: 400px;
+  }
+  .container-in{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto  ;
   }
 }
 
@@ -212,7 +217,10 @@ body {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width:500px) {
+  .imgjotunheim {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 376px) {
