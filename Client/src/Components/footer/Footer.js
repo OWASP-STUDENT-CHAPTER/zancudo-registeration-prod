@@ -39,14 +39,14 @@ return(
                 <div className="contact-right-elements">
                     <div className="row">
                         <div className="col-lg-1">
-                            <a href="tel:+918837669833">
+                            <a href="tel: +919674603907">
                                 <i className="fas fa-phone-alt"></i>
                             </a>
                         </div>
                         <div className="col-lg-11">
-                            <a href="tel:+918837669833">
+                            <a href="tel: +919674603907">
                                 <p className="p_2">
-                                    Prajit Sengupta +91 883-7669833
+                                    Prajit Sengupta +91 96746103907
                                 </p>
                             </a>
                         </div>
