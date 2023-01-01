@@ -108,9 +108,9 @@ app.use("/api/event", event);
 // * Production setup
 if (process.env.NODE_ENV === "production") {
   console.log("prod");
-  app.use(express.static(path.resolve(__dirname, "../Client/build")));
+  app.use(express.static(path.resolve(__dirname, "/Client/build")));
   app.get("/*", function (req, res) {
-    res.sendFile(path.resolve(__dirname, "../Client/build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "/Client/build", "index.html"));
   });
 
 // if (process.env.NODE_ENV === "production") {
