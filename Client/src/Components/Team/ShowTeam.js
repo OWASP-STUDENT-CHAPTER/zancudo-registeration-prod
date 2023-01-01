@@ -58,7 +58,7 @@ export default function TeamShow({ team, setUser, eventId }) {
 
   useEffect(() => {
     axios
-      .get(`/api/team/members/${team._id}`)
+      .get(`/team/members/${team._id}`)
       .then((data) => {
         // console.log(data);
         setMembers(data.data.body);
