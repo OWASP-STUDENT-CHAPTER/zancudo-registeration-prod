@@ -42,6 +42,15 @@ const connectDB = async  () => {
 }
 
 // * Middleware
+app.use(
+  session({
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    secret: process.env.COOKIESECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: { maxAge: 24 * 60 * 60 * 1000, /*secure: true,*/ httpOnly: true },
+  })
+);
 
 // this -->
 app.use(
@@ -104,15 +113,7 @@ connectDB().then(() => {
   app.listen(port, console.log(`Server Started on port ${port}`));
 })
 
-app.use(
-  session({
-    store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    secret: process.env.COOKIESECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: { maxAge: 24 * 60 * 60 * 1000, /*secure: true,*/ httpOnly: true },
-  })
-);
+
 
 // * Production setup
 if (process.env.NODE_ENV === "production") {
