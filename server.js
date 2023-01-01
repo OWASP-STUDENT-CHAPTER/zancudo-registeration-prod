@@ -108,11 +108,12 @@ app.use("/api/event", event);
 // * Production setup
 if (process.env.NODE_ENV === "production") {
   console.log("prod");
-  app.use(express.static(path.resolve(__dirname, "/Client/build")));
-  app.get("/*", function (req, res) {
-    res.sendFile(path.resolve(__dirname, "/Client/build", "index.html"));
+  app.use(express.static(path.join(__dirname, "./Client/build")));
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./Client/build/index.html"));
+    res.cookie("XSRF-TOKEN", req.csrfToken());
   });
-
+}
 // if (process.env.NODE_ENV === "production") {
 //   console.log("production", envConfig);
 //   app.use(express.static(path.resolve(__dirname, "Client", "build")));
@@ -134,4 +135,3 @@ process.on("unhandledRejection", (err, promise) => {
 process.on("uncaughtException", (err, promise) => {
   console.log(`Error: ${err.message}`);
 });
-}
