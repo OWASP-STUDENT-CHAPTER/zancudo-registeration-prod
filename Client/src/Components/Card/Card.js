@@ -28,7 +28,7 @@ const Card = ({
               style="height: 44px; width: 312px"
             ></div>
           ) : (
-            layout ?  <Link to = {""}>Coming Soon</Link> :  <Link to={`/dashboard/team/?id=${_id}&name=${name}`}>Team</Link>
+            layout ?  <Link to = {""}>Coming Soon !</Link> :  <Link to={`/dashboard/team/?id=${_id}&name=${name}`}>Team</Link>
           )}
           {/* <Link to={`/dashboard/team/?id=${_id}&name=${name}`}>Team</Link> */}
           {/* <a href={active ? link : "#"}>coming soon</a> */}

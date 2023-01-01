@@ -10,6 +10,7 @@ const RegistrationPage = () => {
       <section className="pc-form-section fix">
         <div className="contact" data-aos="fade-in" data-aos-duration="2000">
           <div className="main-registration-form">
+          <br/><br/>
             <RegistrationForm buttonText="Sign-up with " />
           </div>
         </div>
