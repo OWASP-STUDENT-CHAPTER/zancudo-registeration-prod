@@ -24,19 +24,22 @@ const cookieParser = require("cookie-parser");
 const app = express();
 
 // * DB Connection
-mongoose.connect(
-  process.env.MONGO_URI,
-  {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  },
-  (err) => {
-    if (err) return console.log("Connection to MongoDB failed.\n", err);
-    return console.log("Connected to MongoDB");
+const connectDB = async  () => {
+  try{
+    const conn = await mongoose.connect(
+      process.env.MONGO_URI,
+      {
+        useNewUrlParser: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
+        useUnifiedTopology: true,
+      })
+      return console.log(`Connected to MongoDB ${conn.connection.host}`);
   }
-);
+  catch(err){
+    return console.log("Connection to MongoDB failed.\n", err);
+  }
+}
 
 // * Middleware
 
@@ -48,15 +51,6 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(
-  session({
-    store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    secret: process.env.COOKIESECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: { maxAge: 24 * 60 * 60 * 1000, /*secure: true,*/ httpOnly: true },
-  })
-);
 app.use(cookieParser());
 app.use(cors({ origin: `${process.env.CLIENT_URL}`, credentials: true }));
 app.use((req, res, next) => {
@@ -72,9 +66,7 @@ app.use((req, res, next) => {
 app.use(passport.initialize());
 app.use(passport.session());
 
-// * Server Setup
-const port = process.env.PORT || 5000;
-const server = app.listen(port, console.log(`Server Started on port ${port}`));
+
 
 // * Importing router
 const user = require("./routes/participant");
@@ -104,6 +96,23 @@ app.use(function (req, res, next) {
 app.use("/api/user", user);
 app.use("/api/team", team);
 app.use("/api/event", event);
+
+
+// * Server Setup
+const port = process.env.PORT || 5000;
+connectDB().then(() => {
+  app.listen(port, console.log(`Server Started on port ${port}`));
+})
+
+app.use(
+  session({
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    secret: process.env.COOKIESECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: { maxAge: 24 * 60 * 60 * 1000, /*secure: true,*/ httpOnly: true },
+  })
+);
 
 // * Production setup
 if (process.env.NODE_ENV === "production") {
