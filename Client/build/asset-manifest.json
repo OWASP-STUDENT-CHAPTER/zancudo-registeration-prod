@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.75da56b7.chunk.css",
+    "main.js": "/static/js/main.53dda05d.chunk.js",
+    "main.js.map": "/static/js/main.53dda05d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d8f439a3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d8f439a3.js.map",
+    "static/js/2.faecbb82.chunk.js": "/static/js/2.faecbb82.chunk.js",
+    "static/js/2.faecbb82.chunk.js.map": "/static/js/2.faecbb82.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.75da56b7.chunk.css.map": "/static/css/main.75da56b7.chunk.css.map",
+    "static/js/2.faecbb82.chunk.js.LICENSE.txt": "/static/js/2.faecbb82.chunk.js.LICENSE.txt",
+    "static/media/DataVault.a2f84919.png": "/static/media/DataVault.a2f84919.png",
+    "static/media/Flipr_White_Logo.56a19bae.png": "/static/media/Flipr_White_Logo.56a19bae.png",
+    "static/media/JIO-RED.16fc33fc.png": "/static/media/JIO-RED.16fc33fc.png",
+    "static/media/NordVPN.4420e894.png": "/static/media/NordVPN.4420e894.png",
+    "static/media/NoticeBardedit.d2eccb6c.png": "/static/media/NoticeBardedit.d2eccb6c.png",
+    "static/media/YouthInc.18373abf.png": "/static/media/YouthInc.18373abf.png",
+    "static/media/EventCard.module.css": "/static/media/banner.e8881421.png",
+    "static/media/App.css": "/static/media/bg4.d70a8f2e.jpeg",
+    "static/media/codingblocks.5f056419.png": "/static/media/codingblocks.5f056419.png",
+    "static/media/gfg-03.f5754f05.png": "/static/media/gfg-03.f5754f05.png",
+    "static/media/google.6d9ed119.png": "/static/media/google.6d9ed119.png",
+    "static/media/icognito.f85a2a10.png": "/static/media/icognito.f85a2a10.png",
+    "static/media/jarvis.bb8db8b5.png": "/static/media/jarvis.bb8db8b5.png",
+    "static/media/layoutlogo.a570f9c6.png": "/static/media/layoutlogo.a570f9c6.png",
+    "static/media/logo-owasp.9d0652b2.png": "/static/media/logo-owasp.9d0652b2.png",
+    "static/media/navbar-extended.css": "/static/media/pricedown bl.e2f4d74b.ttf",
+    "static/media/racquetstransparent.8014b295.png": "/static/media/racquetstransparent.8014b295.png",
+    "static/media/redbull.b04e3932.png": "/static/media/redbull.b04e3932.png",
+    "static/media/sleepyowledit-1.7c6d724e.png": "/static/media/sleepyowledit-1.7c6d724e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8f439a3.js",
+    "static/js/2.faecbb82.chunk.js",
+    "static/css/main.75da56b7.chunk.css",
+    "static/js/main.53dda05d.chunk.js"
+  ]
+}
