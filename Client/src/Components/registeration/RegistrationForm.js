@@ -3,7 +3,6 @@ import { Form } from "react-bootstrap";
 import Cookie from "js-cookie";
 import google from "../../assets/google.png";
 import "../../App.css";
-import URL from "../../util/url";
 
 const RegistrationForm = ({ buttonText, ...rest }) => {
   const [state, setState] = useState({
@@ -35,7 +34,7 @@ const RegistrationForm = ({ buttonText, ...rest }) => {
       <div className="animated-background">
         <Form
           {...rest}
-          action={`${URL}/api/user/signup`}
+          action={`/api/user/signup`}
           method="POST"
           className="register-form"
         >

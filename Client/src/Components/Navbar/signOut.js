@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import Owasp from "../../assets/logo-owasp.png";
 import { useHistory, useLocation } from "react-router-dom";
-import URL from "../../util/url";
+
 
 const NavbarSignOut = () => {
   const history = useHistory();
@@ -54,7 +54,7 @@ const NavbarSignOut = () => {
             </li>
           ) : (
             <li>
-              <a href={`${URL}/api/user/logout`} className="navbarprat-link">
+              <a href={`/api/user/logout`} className="navbarprat-link">
                 Sign Out
               </a>
             </li>

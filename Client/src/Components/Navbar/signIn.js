@@ -2,7 +2,6 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import Owasp from "../../assets/logo-owasp.png";
 import "../../assets/css/navbar-extended.css";
-import URL from "../../util/url";
 
 const SignIn = ({ user }) => {
   return (
@@ -15,7 +14,7 @@ const SignIn = ({ user }) => {
             </a>
           </li>
           <li>
-            <a href={`${URL}/api/user/login`} className="navbarprat-link">
+            <a href={`/api/user/login`} className="navbarprat-link">
               Sign In
             </a>
           </li>

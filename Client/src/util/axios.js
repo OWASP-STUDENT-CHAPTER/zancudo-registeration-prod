@@ -4,7 +4,7 @@ import URL from "./url";
 console.log(URL);
 
 export default axios.create({
-  baseURL: URL + "/api",
+  baseURL: "/api",
   responseType: "json",
   withCredentials: true,
 });
